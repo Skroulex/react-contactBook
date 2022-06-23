@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+body {
+    display: flex;
+    justify-content: center;
+}
+.inputs {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    font-size: 1.2rem;
+    margin: 5px 0;
+    padding: 10px 10px;
+    border-radius: 0.2rem;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    width: 90%;
+    display: block;
+    transition: all 0.3s;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.img {
+    position: absolute;
+    z-index: -1;
+    left: 800px;
+    top: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn-header:hover {
+    background-color: black; /* Green */
+    color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btn-header {
+    border-radius: 10px;
+    background: white;
+    border: black 1px solid;
+    color: black;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 5px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+}
+.save-btn {
+    border-radius: 10px;
+    background: white;
+    border: black 1px solid;
+    color: black;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 5px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.save-btn:hover {
+    background-color: black; /* Green */
+    color: white;
+}
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.list-container{
+    overflow-y: scroll;
+    height: 500px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.container{
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+.names{
+    font-size: 14px;
+    font-family: "Roboto Light",sans-serif;
+}
+.edits{
+    border-radius: 10px;
+    background: white;
+    border: black 1px solid;
+    color: black;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 5px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width: 200px;
+}
+.edits:hover{
+    background-color: black; /* Green */
+    color: white;
 }
